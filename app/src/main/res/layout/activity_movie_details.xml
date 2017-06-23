@@ -4,19 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#181818"
     tools:context=".MovieDetailsActivity">
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:text="TextView"
-        android:textAppearance="@android:style/TextAppearance.Large" />
+        android:textColor="#FFFFFF"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_below="@+id/ivBackdropImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <RatingBar
         android:id="@+id/rbVoteAverage"
@@ -33,10 +35,19 @@
         android:id="@+id/tvOverview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+        android:text="TextView"
+        android:textColor="#8F8F8F"
+        android:layout_below="@+id/tvPopularity"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvPopularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#8F8F8F"
+        android:layout_alignLeft="@+id/tvOverview"
         android:layout_below="@+id/rbVoteAverage"
         android:text="TextView" />
+
 </RelativeLayout>
